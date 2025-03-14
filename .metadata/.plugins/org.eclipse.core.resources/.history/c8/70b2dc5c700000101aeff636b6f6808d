@@ -1,0 +1,21 @@
+// 객체지향 프로그래밍의 특징 
+	// 1) 프로그램의 독립적인 단위인 객체들을 모아서 처리 
+	// 2) 각각의 객체는 메시지를 주고 받으며 데이터를 처리
+	// 3) 객체지향 프로그래밍에서는 추상화, 캡슐화, 상속, 다형성을 활용 
+
+// 추상화 (Abstraction)
+	// 
+package day12;
+
+public class Polymorphism {
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+
+class Anumal{
+	public void move() { System.out.println("Moooooooove-___-"); }
+	
+}

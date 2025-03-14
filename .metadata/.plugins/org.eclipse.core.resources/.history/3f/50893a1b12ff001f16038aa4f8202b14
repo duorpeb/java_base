@@ -1,0 +1,28 @@
+// 상속
+// 상속이란 기반 클래스의 멤버 변수와 메서드를 파생 클래스가 재사용하는 것을 의미
+// 멤버 변수와 메서드만 상속이 가능하며 이는 클래스의 확장 개념 
+
+// 상속을 하는 이유는 재사용을 통해 중복성을 낮추고 유지보수를 용이하게 하기 위함
+
+// 상속의 형식 
+// class Parent class Child
+// class Child extends Parent
+
+// 기반 클래스의 private 은 파생 클래스가 접근 불가능
+// 단일 상속을 원칙으로 함 
+
+package day10;
+
+public class Super01 {
+
+}
+
+
+class Parent{
+	private int x, y, z;
+}
+
+
+class Child{
+	
+}

@@ -1,0 +1,5 @@
+package day11_studentManager;
+
+public interface ManagerFunction {
+
+}

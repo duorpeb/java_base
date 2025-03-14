@@ -1,0 +1,14 @@
+package day10;
+
+public class Static01 {
+	
+}
+
+class Tv{
+	private boolean power;
+	private static final String BRAND = "LG";
+	
+	public static void printBrand() {
+		System.out.println("Brand : " + BRAND);
+	}
+}

@@ -1,0 +1,13 @@
+package day10;
+
+public class Super02 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+// 부모 클래스 
+class Animal{
+	
+}

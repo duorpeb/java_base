@@ -1,0 +1,7 @@
+// Subject.c{}, 수강 과목에 대한 정보를 가진 클래스 
+	// 수강 과목 : 과목 이름, 과목 코드, 학점, 시수, 교수명, 시간표, 강의실 
+package day11_studentManager;
+
+public class Subject {
+
+}

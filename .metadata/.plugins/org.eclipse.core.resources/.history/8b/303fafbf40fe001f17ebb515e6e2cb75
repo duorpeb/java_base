@@ -1,0 +1,7 @@
+// 가변인자 메서드의 오버로딩
+// 매개변수의 개수가 고정되어 있지 않는 경우 사용하는 방식 
+package day09;
+
+public class Overloading02 {
+
+}

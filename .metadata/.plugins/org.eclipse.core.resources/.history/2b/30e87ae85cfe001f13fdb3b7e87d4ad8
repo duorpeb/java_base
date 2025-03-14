@@ -1,0 +1,46 @@
+package day09;
+
+public class Exam02SdCourse {
+ private
+  String course, dateStart, dateEnd;
+
+ public Exam02SdCourse(String course, String dateStart, String dateEnd) {
+	 this.course = course;
+	 this.dateStart = dateStart;
+	 this.dateEnd = dateEnd;
+ }
+ 
+ public
+  void courseDisplay() {
+	 System.out.println("<수강 정보>");
+	 System.out.println("수강 과목 : " + getCourse());
+	 System.out.println("개강일 : " + getDateStart());
+	 System.out.println("종료일 : " + getDateEnd());
+	 
+ }
+
+
+	public String getCourse() {
+		return course;
+	}
+
+	public void setCourse(String course) {
+		this.course = course;
+	}
+
+	public String getDateStart() {
+		return dateStart;
+	}
+
+	public void setDateStart(String dateStart) {
+		this.dateStart = dateStart;
+	}
+
+	public String getDateEnd() {
+		return dateEnd;
+	}
+
+	public void setDateEnd(String dateEnd) {
+		this.dateEnd = dateEnd;
+	}
+}

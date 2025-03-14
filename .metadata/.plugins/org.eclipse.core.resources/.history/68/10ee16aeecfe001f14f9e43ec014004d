@@ -1,0 +1,25 @@
+// Product 클래스 
+// Product 클래스는 상품을 등록하는 클래스 
+// 메서드 1) 상품명과 가격을 출력하는 메서드 
+// 메서드 2) 상품을 추가하는 메서드 
+
+// main 클래스에서 처리
+// 상품 10개를 등록 가능한 배열을 생성하고 스캐너를 통해서 상품을 등록받음
+// 등록한 상품을 출력 
+package day10;
+
+public class ClassEx01 {
+ private
+  String name, price;
+ 
+ public ClassEx01() {}
+ 
+ public
+  void productPrint() {
+	 	
+ 	}
+ 
+  void productAdd() {
+	 	
+  }
+}

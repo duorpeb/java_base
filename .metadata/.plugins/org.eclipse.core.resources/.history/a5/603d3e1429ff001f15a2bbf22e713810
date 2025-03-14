@@ -1,0 +1,130 @@
+// 성적표
+// 데이터를 입력받아 저장하고 성적표를 출력
+// 항목 : 이름 국어 영어 수학 총점 평균 석차
+
+//조건 1) 몇 명의 성적을 출력할지 결정 
+package day10;
+
+import java.util.Scanner;
+
+public class Exam01Report {
+	private String name;
+	private int scoreKor;
+	private int scoreEng;
+	private int scoreMath;
+	private int total;
+	private double average;
+	private double rank;
+	
+	// 기본 생성자 
+	public Exam01Report() {}
+	
+  
+  // reportInput(), 점수를 입력 받고 총점 저장 
+  public void reportInput() {
+  	int tmp = 0;
+  	
+  	// 총점 
+  	int sumTmp = 0;
+  	
+  	Scanner sc = new Scanner(System.in);
+  	
+		
+  	// 이름 입력
+		System.out.println("이름을 입력하세요");
+		System.out.println("이름 "+ " : ");
+		
+		setName(sc.nextLine());
+		
+		// 국어, 영어, 수학 점수 입력
+		// 국어 
+		System.out.println("국어점수를 입력하세요");
+		System.out.print("국어 점수 : ");
+		
+		setScoreKor(sc.nextInt());
+		sumTmp += getScoreKor();
+		
+		// 영어 
+		System.out.println("영어점수를 입력하세요");
+		System.out.print("영어 점수 : ");
+		
+		setScoreEng(sc.nextInt());
+		
+		sumTmp += tmp;
+		
+		// 수학
+		System.out.println("수학점수를 입력하세요");
+		System.out.print("수학 점수 : ");
+		
+		setScoreMath(sc.nextInt());
+		
+		sumTmp += tmp;
+		
+		setTotal(sumTmp);
+  } // reportInput() fin 
+	
+  
+	// 출력
+  public void printReport() {
+  	System.out.println("이름\t 국어\t 영어\t 수학\t 총점\t 평균\t 석차");
+	}
+
+  
+  
+	// Getter & Setter
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getScoreKor() {
+		return scoreKor;
+	}
+
+	public void setScoreKor(int scoreKor) {
+		this.scoreKor = scoreKor;
+	}
+
+	public int getScoreEng() {
+		return scoreEng;
+	}
+
+	public void setScoreEng(int scoreEng) {
+		this.scoreEng = scoreEng;
+	}
+
+	public int getScoreMath() {
+		return scoreMath;
+	}
+
+	public void setScoreMath(int scoreMath) {
+		this.scoreMath = scoreMath;
+	}
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
+	public double getAverage() {
+		return average;
+	}
+
+	public void setAverage(double average) {
+		this.average = average;
+	}
+
+	public double getRank() {
+		return rank;
+	}
+
+	public void setRank(double rank) {
+		this.rank = rank;
+	}
+}

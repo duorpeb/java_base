@@ -1,0 +1,21 @@
+package day10;
+
+public class Static01 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Tv{
+	private boolean power;
+	private static final String BRAND = "LG";
+	
+	public static void printBrand() {
+		System.out.println("Brand : " + BRAND);
+	}
+	
+	void printPower() { 
+		System.out.println(power); 
+		System.out.println("Brand : " + BRAND);
+	}
+}

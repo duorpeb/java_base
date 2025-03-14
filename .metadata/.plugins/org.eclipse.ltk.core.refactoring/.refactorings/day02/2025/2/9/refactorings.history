@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;day02.Math&apos; to &apos;MathClass&apos;&#x0D;&#x0A;- Original project: &apos;day02&apos;&#x0D;&#x0A;- Original element: &apos;day02.Math&apos;&#x0D;&#x0A;- Renamed element: &apos;day02.MathClass&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Math&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;day02{Math.java[Math" matchStrategy="1" name="MathClass" qualified="false" references="true" similarDeclarations="false" stamp="1740633685533" textual="false" version="1.0"/>
+</session>

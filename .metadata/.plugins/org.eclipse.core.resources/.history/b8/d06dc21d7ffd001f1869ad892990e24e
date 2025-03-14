@@ -1,0 +1,7 @@
+// 생성자는 객체 생성 시 초기값을 지정해주는 역할 
+
+package day08;
+
+public class Constructor01 {
+
+}

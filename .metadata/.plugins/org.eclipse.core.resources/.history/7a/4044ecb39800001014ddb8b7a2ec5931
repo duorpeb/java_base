@@ -1,0 +1,38 @@
+// 날짜, 시간 클래스 
+// 마우스를 갖다 댔을 때, A 는 추상 클래스, I 는 인터페이스
+	// Date 클래스는 비권장 (Depercated)
+
+	// Calendar 클래스
+		// Calendar 클래스는 싱글톤 패턴으로 new 키워드를 사용하여 객체를 생성하는 것이 아닌 
+		// getInstance() 를 이용하여 생성된 인스턴스를 읽어옴 
+
+
+	// LocalDateTime 클래스 
+
+package day12;
+
+import java.util.Calendar;
+
+public class Date01 {
+	public static void main(String[] args) {
+		// Date 클래스 
+//		Date d = new Date();
+//		System.out.println(d.getDate());
+		
+
+		// Calendar 클래스 
+			// 사용 형식 : Calendar_변수명 = Calendar.getInstance();
+			// 오늘 날짜를 리턴 
+		Calendar c = Calendar.getInstance();
+		
+			// 날짜 받아오는 형식이 출력 
+		System.out.println(c);
+		
+			// 수 많은 형식 중 연도를 출력 
+		int year = c.YEAR;
+			
+			// public static final int YEAR = 1; 로 
+			// 선언되어있기에 아래 문장 출력 시 1 로 출력 
+		System.out.println(year);
+	}
+}

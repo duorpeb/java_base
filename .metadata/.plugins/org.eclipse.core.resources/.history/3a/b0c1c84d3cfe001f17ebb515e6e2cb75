@@ -1,0 +1,36 @@
+// Card 클래스의 객체를 묶은 pack, idx 0 ~ 51 까지의 배열 (총 52 장)
+// 메소드 1) printCard() - 카드 출력
+// 메소드 2) 생성자() - 카드 초기화
+// 메소드 3) shuffle() - 카드 섞는 기능 
+// 메소드 4) draw() - 카드 한 장을 나눠주는 기능
+package day09;
+
+public class CardPack {
+ private
+ 	//Card 클래스를 담는 pack 배열 (idx 0 ~ 51) 
+ 	Card pack[] = new Card[52];
+ 	int cnt = 0;
+ 
+  // 생성자로 초기화
+  public CardPack() { 
+  	
+  }
+	
+  
+ public
+  // shuffle() - 카드 섞기 
+  void shuffle() {
+ 	}
+ 	
+ 	// 중복 방지 메서드 
+ 	void remove() {
+ 		
+ 	}
+  
+  // draw() - 카드 뽑기 
+  String draw(String[] arr) {
+  	String result;
+  	
+  	return result;
+  }
+}

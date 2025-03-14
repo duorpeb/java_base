@@ -1,0 +1,44 @@
+package day10;
+
+public class Super02 {
+	public static void main(String[] args) {
+		
+	}
+}
+// 파생 클래스
+class Dog extends Animal{
+	// 생성자 
+	// 기반 클래스의 생성자를 호출하여 파생 클래스의 생성자 생성 
+	public Dog(String name, String category) { super(name, category); }
+	
+	// 기반 클래스의 메서드를 호출하여 Setter()
+	super.setName(name);
+	super.setCategory(category);
+}
+
+
+
+// 기반 클래스 
+class Animal{
+	private String name; // 동물 이름 
+	private String category; // 동물 유형 
+	
+	// 기본 생성자
+	public Animal() {}
+	
+	public Animal(String name, String category) {
+		this.name = name;
+		this.category = category;
+	}
+	
+	// 출력 메서드 
+	void printInfo() {
+		System.out.println("이름 : " + name);
+		System.out.println("종 : " + category);
+	}
+	
+	// 울음소리 출력 메서드 
+	void howl() {
+		System.out.println("멍멍");
+	}
+}

@@ -1,0 +1,27 @@
+package day08;
+
+public class Class01 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+// (x,y) 
+class Point{
+	// 멤버 변수
+	int x = 0;
+	
+	int y = 0;
+	
+	
+	// 메소드
+	// 입력 메소드 
+	
+	
+	// 출력 메소드
+	void printArr() {
+		
+		
+		System.out.println("x");
+	}
+}

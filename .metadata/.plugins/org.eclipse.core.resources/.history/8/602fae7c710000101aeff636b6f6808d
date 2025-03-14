@@ -1,0 +1,60 @@
+// 객체지향 프로그래밍의 특징 
+	// 1) 프로그램의 독립적인 단위인 객체들을 모아서 처리 
+	// 2) 각각의 객체는 메시지를 주고 받으며 데이터를 처리
+	// 3) 객체지향 프로그래밍에서는 추상화, 캡슐화, 상속, 다형성을 활용 
+
+// 추상화 (Abstraction)
+	// 
+package day12;
+
+public class Polymorphism {
+	public static void main(String[] args) {
+		// Cat, Dog, Eagle, Human
+		Cat c = new Cat();
+		Dog d = new Dog();
+		Eagle e = new Eagle();
+		Human h = new Human();
+		
+		c.move();
+		d.move();
+		e.move();
+		h.move();
+		
+		System.out.println("<부모 객체로 자식 객체를 생성>");
+		Animal a = new Human();
+		a.move();
+	}
+}
+
+
+
+class Animal{
+	public void move() { System.out.println("Moooooooove-___-"); }
+}
+
+// Cat
+class Cat extends Animal{
+	public void move() { System.out.println("야옹-___-");  }
+}
+
+// Dog
+class Dog extends Animal {
+	@Override
+	public void move() { System.out.print("멍멍-___- "); System.out.println("🐕🐕🐕");}
+}
+
+// Eagle
+class Eagle extends Animal {
+	@Override
+	public void move() { System.out.print("flyyyyyyyyyyy "); }
+	
+	public void flying() { System.out.println("🕊️🕊️🕊️"); }
+}
+
+// Human
+class Human extends Animal {
+	@Override
+	public void move() { System.out.print("workkkkkkkkk "); }
+	
+	public void working() { System.out.println("🚶‍♂️🚶‍♂️🚶‍♂️"); }
+}

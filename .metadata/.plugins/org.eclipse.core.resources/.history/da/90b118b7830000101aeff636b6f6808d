@@ -1,0 +1,28 @@
+package day12;
+
+class GoldCustomer extends Customer{
+	
+	private double saleRatio;
+	
+	public GoldCustomer() {}
+
+	
+	
+	
+	
+	
+	@Override
+	public String toString() {
+		return "GoldCustomer [saleRatio=" + saleRatio + "]";
+	}
+
+
+	// Getter(), Setter()
+	public double getSaleRatio() {
+		return saleRatio;
+	}
+
+	public void setSaleRatio(double saleRatio) {
+		this.saleRatio = saleRatio;
+	}
+}

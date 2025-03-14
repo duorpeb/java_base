@@ -1,0 +1,20 @@
+package day11;
+
+public class Interface01 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+// 인터페이스 선언 (1)
+interface Power{
+	abstract void turnOn();
+	abstract void turnOff();
+}
+
+// 인터페이스 선언 (2)
+interface Remote{
+	void volUp();
+	void volDown();
+}

@@ -1,0 +1,12 @@
+package day12;
+
+class VipCustomer extends Customer{
+	private double saleRatio;
+	private int agentNum;
+	private String agentName;
+	
+	// 기본 생성자 
+	public VipCustomer() {}
+	
+	// Getter(), Setter()
+}

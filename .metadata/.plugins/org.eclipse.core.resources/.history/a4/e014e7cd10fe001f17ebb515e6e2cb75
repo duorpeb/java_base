@@ -1,0 +1,12 @@
+// 상수는 변하지 않는 값으로 final 키워드를 사용
+// e.g., final double PI = 3.141592
+package day09;
+
+public class Constant01 {
+	final double PI = 3.141592;
+	
+	int r = 2;
+	
+	double circumference = 2 * PI * r;
+	double area = PI * r * r;
+}

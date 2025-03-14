@@ -1,0 +1,7 @@
+// static 은 클래스의 멤버 변수, 클래스의 멤버 메서드라고 함 
+
+package day10;
+
+public class Static01 {
+	
+}

@@ -1,0 +1,25 @@
+// 메서드 오버로딩
+// 메소드 오버로딩이란 동일한 이름의 메소드를 여러 개 만드는 케이스를 의미
+
+// 오버로딩의 조건 
+// 조건 1) 매개변수의 개수가 달라야 함
+// 조건 2) 매개변수의 타입이 달라야 함 (리턴 타입과 매개변수의 이름은 상관 없음)
+package day09;
+
+public class Overloading01 {
+
+	public static void main(String[] args) {
+		int num1 = 10, num2 = 20;
+		
+		// static 이 붙은 클래스가 아닌 이상 
+		// 사용하기 위해선 먼저 클래스의 객체를 생성해야 함 
+		Overloading01 m7 = new Overloading01();
+		int add = m7.sum(num1, num2);
+		
+		System.out.println(add);
+	}
+	
+	
+	public int sum(int num1, int num2) { return num1 + num2; }
+	public int sum(int num1, int num2,int num3) { return num1 + num2 + num3; }
+}

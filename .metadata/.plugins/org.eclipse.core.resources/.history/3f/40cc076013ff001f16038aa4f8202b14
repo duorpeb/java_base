@@ -1,0 +1,101 @@
+// 상속
+// 상속이란 기반 클래스의 멤버 변수와 메서드를 파생 클래스가 재사용하는 것을 의미
+// 멤버 변수와 메서드만 상속이 가능하며 이는 클래스의 확장 개념 
+
+// 상속을 하는 이유는 재사용을 통해 중복성을 낮추고 유지보수를 용이하게 하기 위함
+
+// 상속의 형식 
+// class Parent class Child
+// class Child extends Parent
+
+// 기반 클래스의 private 은 파생 클래스가 접근 불가능
+// 단일 상속을 원칙으로 함 
+
+package day10;
+
+public class Super01 {
+	public static void main(String[] args) {
+		Parent a = new Parent();
+		
+	} // main fin
+}
+
+
+class Parent{
+	// 상속 불가 (Parent) 클래스에서만 사용 가능  
+	private int x = 1, y = 2, z = 3;
+	
+	// 상속 가능 
+	protected int a = 4, b = 5, c = 6;
+	
+	void print() {
+		System.out.println("x : " + x + "y : " + y + "c : " + z);
+		System.out.println("a : " + a + "b : " + b + "c : " + c);
+		System.out.println();
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	public int getZ() {
+		return z;
+	}
+
+	public void setZ(int z) {
+		this.z = z;
+	}
+
+	public int getA() {
+		return a;
+	}
+
+	public void setA(int a) {
+		this.a = a;
+	}
+
+	public int getB() {
+		return b;
+	}
+
+	public void setB(int b) {
+		this.b = b;
+	}
+
+	public int getC() {
+		return c;
+	}
+
+	public void setC(int c) {
+		this.c = c;
+	}
+} // Parent class fin
+
+
+// Child class 
+class Child extends Parent{
+	private int i = 1, j = 2, k = 3;
+
+	
+	// override
+	// 부모의 메서드를 재정의 
+	// super 는 기반 클래스의 멤버 변수 / 메서드를 사용할 때, 사용하는 키워드
+	// this 는 자신의 멤버 변수 / 메서드를 사용할 때, 사용하는 키워드
+	@Override
+	void print() { 
+		super.print();
+		System.out.println("i : " + i + "j : " + j + "k : " + k);
+	}
+}

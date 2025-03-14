@@ -1,0 +1,39 @@
+package day12;
+
+class GoldCustomer extends Customer{
+	
+	private double saleRatio;
+	
+	// 기본 생성자
+	public GoldCustomer() {}
+
+	// 기본 생성자 오버로딩, +
+	// GoldCustomer 는 골드 등급이기에 
+	// 골드 등급의 디폴트값을 생성자로 설정
+	public GoldCustomer(int id, String name) {
+		super(id,name);
+		
+		// GoldCustomer 에서 추가/수정
+		this.grade = "Gold";
+		this.grade = "Gold";
+		this.grade = "Gold";
+	}
+	
+	
+	
+	// 출력, toString()
+	@Override
+	public String toString() {
+		return "GoldCustomer [saleRatio=" + saleRatio + "]";
+	}
+
+
+	// Getter(), Setter()
+	public double getSaleRatio() {
+		return saleRatio;
+	}
+
+	public void setSaleRatio(double saleRatio) {
+		this.saleRatio = saleRatio;
+	}
+}

@@ -1,0 +1,6 @@
+package day12;
+
+class GoldCustomer extends Customer{
+	
+	private double saleRatio;
+}

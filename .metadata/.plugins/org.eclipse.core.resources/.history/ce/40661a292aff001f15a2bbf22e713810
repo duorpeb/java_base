@@ -1,0 +1,29 @@
+// 성적표
+// 데이터를 입력받아 저장하고 성적표를 출력
+// 항목 : 이름 국어 영어 수학 총점 평균 석차
+
+// 조건 1) 몇 명의 성적을 출력할지 결정 
+// 석차는 메인에서 
+package day10;
+
+import java.util.Scanner;
+
+public class Exam01Main {
+	public static void main(String[] args) {
+		int outputNum = 0;
+
+		// UI
+  	System.out.println("몇 명의 성적을 출력하시겠습니까?");
+  	System.out.print("성적을 출력할 인원 수 : ");
+  	
+  	Scanner sc = new Scanner(System.in);
+  	
+  	outputNum = sc.nextInt();
+  	
+  	Exam01Report[] studentArr = new Exam01Report[];
+		
+//  	// 확인
+//  	Exam01Report a = new Exam01Report();
+//		a.printReport();
+	}
+}
