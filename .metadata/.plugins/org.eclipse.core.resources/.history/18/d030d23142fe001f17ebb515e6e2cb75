@@ -1,9 +1,0 @@
-// 메서드로 작업 
-// 두 정수의 값이 주어졌을 때, 두 정수 사이의 모든 정수의 합을 리턴하는 메서드 
-package day09;
-
-public class Exam01 {
-	public static void main(String[] args) {
-		
-	}
-}
